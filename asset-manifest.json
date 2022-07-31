@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/Live-Edu_Academia-Geek3/static/css/main.c27b31a0.css",
+    "main.js": "/Live-Edu_Academia-Geek3/static/js/main.3496a940.js",
+    "index.html": "/Live-Edu_Academia-Geek3/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.c27b31a0.css",
+    "static/js/main.3496a940.js"
+  ]
+}
