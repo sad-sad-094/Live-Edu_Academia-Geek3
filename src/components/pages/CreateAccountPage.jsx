@@ -9,6 +9,7 @@ import { WelcomeTextContainer, BasicContainer, WelcomeContainer } from "../../st
 import CreateButton from '../modules/CreateButton';
 import CreateInput from '../modules/CreateInput';
 import { toast } from 'react-toastify';
+import {useNavigate} from 'react-router-dom';
 
 
 function CreateAccount(props) {
@@ -23,6 +24,7 @@ function CreateAccount(props) {
   }
 
   const [newUser, setNewUser] = useState(defaultNewUser());
+  const navigation = useNavigate();
 
   const create = () => {
 
@@ -39,7 +41,8 @@ function CreateAccount(props) {
               .catch((error) => {
                 console.error("Error adding document: ", error);
               });
-            toast.success('Email verification have been sent.')
+            toast.success('Email verification have been sent.');
+            navigation("/login");
           })
       })
   }
